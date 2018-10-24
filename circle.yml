@@ -1,0 +1,9 @@
+deployment:
+  prod:
+    branch: master
+    heroku:
+      appname: scmojt2018
+  staging:
+    branch: develop
+    heroku:
+      appname: scmojt2018qa
