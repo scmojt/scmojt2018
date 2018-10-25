@@ -1,0 +1,9 @@
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: scmojtproduction
+  staging:
+    branch: develop
+    heroku:
+      appname: scmojtqa
