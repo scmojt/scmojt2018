@@ -45,7 +45,7 @@ public class ApiModule extends ServletModule {
         serve("").with(SwaggerBootstrap.class);
         BeanConfig beanConfig = new BeanConfig();
         beanConfig.setVersion(swaggerConfigData.version());
-        beanConfig.setSchemes(new String[]{"https"});
+        beanConfig.setSchemes(new String[]{"http"});
         beanConfig.setTitle(swaggerConfigData.title());
         beanConfig.setDescription(swaggerConfigData.description());
         beanConfig.setHost(ConfigurationManager.getInstance().getAppConfigData().host() + ":" + ConfigurationManager.getInstance().getAppConfigData().port().toString());
